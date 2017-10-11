@@ -1,0 +1,301 @@
+body{
+    background: #f5f5f5;
+}
+.topbar{
+    position: static;
+    /*������Զ��?*/
+}
+/*��ȫ������ʾ*/
+ .jd_safeTip{
+     width:100%;
+     height: 34px;
+     text-align: center;
+     line-height: 34px;
+     font-size: 13px;
+
+     position: relative;
+     background: #fff;
+     border-bottom: 1px solid #e0e0e0;
+ }
+ .jd_safeTip p{
+     width: 200px;
+     margin: 0 auto;
+    position: relative;
+ }
+ .jd_safeTip p::before{
+     content: ' ';
+     display: block;
+     width: 18px;
+     height: 18px;
+
+     background: url("../images/safe_icon.png") no-repeat;
+     background-size: 18px 18px;
+     position: absolute;
+     top: 10px;
+     left: 0;
+ }
+ /*ѡ���???*/
+.jd_check_box{
+    height: 20px;
+    width: 20px;
+    background: url("../images/shop-icon.png") no-repeat;
+    background-size: 50px 100px;
+    background-position: 0 0;
+}
+.jd_check_box[checked]{
+    background-position: -25px 0;
+}
+
+.jd_shop{
+    margin-top: 10px;
+    background: #fff;
+}
+/*������*/
+.jd_shop .jd_shop_title {
+    height: 36px;
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+}
+/*������ ѡ���???*/
+.jd_shop .jd_shop_title .tit_check{
+    width: 40px;
+    height: 35px;
+    position: absolute;
+}
+.jd_shop .jd_shop_title .tit_check .jd_check_box{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+/*������ ���ּ���ʾ*/
+.jd_shop .jd_shop_title .tit_name{
+    padding-left: 40px;
+}
+.jd_shop .jd_shop_title .tit_name .imgLogo{
+    width: 15px;
+    height: 13px;
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+.jd_shop .jd_shop_title .tit_name .name{
+    float: left;
+    font-size: 13px;
+    margin-top: 8px;
+    margin-left: 4px;
+}
+.jd_shop .jd_shop_title .tit_name .tip{
+    float: right;
+    color: #f00;
+    margin-right:10px;
+    margin-top: 8px;
+}
+/*��������Ʒ*/
+.jd_shop .jd_shop_con{
+    border-bottom: 1px solid #e0e0e0;
+}
+.jd_shop .jd_shop_con .con_check{
+    width: 40px;
+    /*height: 35px;*/
+    position: absolute;
+
+}
+.jd_shop .jd_shop_con .con_check .jd_check_box{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+.jd_shop .jd_shop_con .con_product{
+    padding-left: 40px;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+.jd_shop .jd_shop_con .con_product .con_product_img{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.jd_shop .jd_shop_con .con_product .con_product_img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+.jd_shop .jd_shop_con .con_product .con_product_box{
+    width: 180px;
+    float: left;
+    padding-bottom: 10px;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .name{
+    display: block;
+    height:30px;
+    line-height:15px;
+    font-size: 13px;
+    overflow: hidden;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .price{
+    margin-top: 5px;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .options{
+
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .options .change_box{
+    float: left;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .options .change_box .change_box_left{
+    width: 32px;
+    height: 24px;
+    border: 1px solid #e0e0e0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    display: block;
+    float: left;
+    text-align: center;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .options .change_box input{
+    width: 32px;
+    height: 24px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    float: left;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .options .change_box .change_box_right{
+    width: 32px;
+    height: 24px;
+    border: 1px solid #e0e0e0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    display: block;
+    float: left;
+    text-align: center;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .options .delete_box{
+    float: right;
+
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .options .delete_box .delete_box_top{
+    width: 20px;
+    height: 5px;
+    background: url("../images/delete_up.png") no-repeat;
+    background-size: 20px 5px;
+    margin-left: -1px;
+}
+.jd_shop .jd_shop_con .con_product .con_product_box .options .delete_box .delete_box_bot{
+    width: 18px;
+    height: 18px;
+    background: url("../images/delete_down.png") no-repeat;
+    background-size: 18px 18px;
+    margin-top: -3px;
+}
+/*����*/
+.jd_amount{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 62px;
+    background: #000000;
+    opacity: 0.8;
+}
+.jd_amount .amount_check{
+    width: 80px;
+    position: absolute;
+    height: 62px;
+}
+.jd_amount .amount_check .jd_check_box{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.jd_amount .amount_check span{
+    position: absolute;
+    left: 35px;
+    top: 20px;
+    color: #fff;
+}
+.jd_amount .amount_info{
+    padding-left: 70px;
+    padding-right: 80px;
+    height: 62px;
+    color: #ffffff;
+}
+.jd_amount .amount_info .sum{
+    font-size: 16px;
+    margin-top: 15px;
+}
+.jd_amount .amount_info .other{
+    font-size: 10px;
+    margin-top: 5px;
+}
+.jd_amount .amount_submit{
+    color: #ffffff;
+    background: #d8505C;
+    width: 120px;
+    height:62px;
+    padding: 0 2px;
+    text-align: center;
+    line-height: 62px;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.jd_amount .amount_submit .span{
+    color: #ffffff;
+}
+.jd_win{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1001;
+}
+.jd_win .jd_win_box{
+    /*position: absolute;*/
+    width: 80%;
+    /*height: 30%;*/
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    /*padding-bottom: 10px;*/
+}
+.jd_win .jd_win_box .jd_win_box_text{
+    font-size: 16px;
+    color: #666;
+    line-height: 75px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+}
+.jd_win .jd_win_box .jd_btn_box{
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.jd_win .jd_win_box .jd_btn_box .cancel{
+    float: left;
+    margin-left: 20px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #888;
+    border: 1px solid #e0e0e0;
+    border-radius: 10%;
+    background: #fff;
+}
+.jd_win .jd_win_box .jd_btn_box .submit{
+    float: left;
+    margin-left: 50px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #d8505C;
+    border-radius: 4px;
+}
